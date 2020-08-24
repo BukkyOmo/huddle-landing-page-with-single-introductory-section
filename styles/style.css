@@ -2,12 +2,21 @@ body{
     background-color: hsl(257, 40%, 49%);
     background-image: url('../images/bg-mobile.svg');
     background-repeat: no-repeat;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
-div{
+.container{
     padding: 10px;
     margin-top: 20px;
     padding: 10px 28px;
+}
+
+.content-container{
+    flex: 1;
+    align-items: center;
 }
 
 .logo-container{
@@ -79,18 +88,22 @@ img{
 
     .content-container{
         display: flex;
-        height: 500px;
         margin-bottom: 30px;
     }
 
-    img{
-        max-width: unset;
+    .landing-page-img {
+        width: 100%;
+    }
+
+    .image-container{
+        flex: 1;
     }
 
     .description{
-        padding: 60px 45px;
+        padding: 60px 65px;
         margin: 40px 20px;
         text-align: unset;
+        flex: 1;
     }
 
     .description h1{
